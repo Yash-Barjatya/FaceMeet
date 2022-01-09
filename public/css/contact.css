@@ -1,0 +1,68 @@
+/********section contact starts*********/
+
+#contact {
+  box-shadow: 0px 0px 25px 0px slategrey;
+  padding: 60px 0;
+  overflow: hidden;
+  color: ivory;
+  background-color: black;
+}
+#contact .section-header {
+  padding-bottom: 30px;
+  text-align: center;
+}
+#contact .section-header h3 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #007bff;
+}
+#contact .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: larger;
+}
+#contact .email-form input,
+#contact .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+#contact .email-form input:focus,
+#contact .email-form textarea:focus {
+  border-color: ivory;
+}
+#contact .email-form input {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+#contact .email-form textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+}
+#contact .email-form textarea::placeholder,
+#contact .email-form input::placeholder {
+  color: #007bff;
+}
+#contact .email-form button[type="submit"] {
+  background: white;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #007bff;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+#contact .email-form button[type="submit"]:hover {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+/********section contact ends*********/

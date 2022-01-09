@@ -1,0 +1,220 @@
+body {
+  background: lightblue url("../image/registration.png");
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #478df7;
+}
+/*-------------------- Buttons --------------------*/
+
+form {
+  padding: 16px;
+  width: 320px;
+  margin: 0 auto;
+}
+.segment {
+  padding: 32px 0;
+  text-align: center;
+}
+.segment h1 {
+  border-bottom: 5px solid black;
+  display: inline-block;
+  color: #478df7;
+}
+button,
+input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+}
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+button {
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: bolder;
+}
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+button .icon {
+  margin-right: 8px;
+}
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+button.unit .icon {
+  margin-right: 0;
+}
+button.red {
+  display: block;
+  width: 100%;
+  color: #478df7;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input-group label {
+  margin: 0;
+  flex: 1;
+}
+/*-------------------- Signup --------------------*/
+.signin {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 1000px;
+  height: 84vh;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+}
+
+.signin-connect,
+.signin-classic {
+  width: 50%;
+  padding: 30px 50px;
+}
+.signin-connect {
+  background: #478df7;
+  color: #fff;
+}
+.signin-connect h1 {
+  text-align: center;
+  margin: 18% 0px;
+}
+.signin-connect p {
+  color: lavender;
+  outline: none;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: monospace;
+  font-weight: bold;
+}
+#signup_btn {
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: bolder;
+}
+#signup_btn:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+#signup_btn:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+#signup_btn.red {
+  display: block;
+  width: 100%;
+  color: #478df7;
+}
+#footer {
+  margin-top: 45%;
+  height: 90px;
+}
+#navigate {
+  margin: 20px 0;
+}
+@media only screen and (min-width: 1500px) {
+  #navigate {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  #footer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 550px) {
+  body {
+    background-color: black;
+  }
+  .signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    margin-top: 50%;
+    margin-left: 25%;
+  }
+  .signin-classic {
+    box-shadow: 3px 0 25px rgba(0, 0, 0, 0.2);
+  }
+}
+@media only screen and (max-width: 550px) and (min-width: 400px) {
+  body {
+    background-color: black;
+  }
+  .signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    margin-top: 70%;
+    margin-left: 45%;
+  }
+  .signin-classic {
+    box-shadow: 3px 0 25px rgba(0, 0, 0, 0.2);
+  }
+}
+@media only screen and (max-width: 400px) and (min-width: 200px) {
+  body {
+    background-color: black;
+  }
+  .signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    margin-top: 95%;
+    margin-left: 70%;
+  }
+  .signin-classic {
+    box-shadow: 3px 0 25px rgba(0, 0, 0, 0.2);
+  }
+}

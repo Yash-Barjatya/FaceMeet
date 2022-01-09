@@ -1,0 +1,143 @@
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+  overflow: hidden;
+}
+
+/* Sections Header
+  --------------------------------*/
+.section-header h3 {
+  font-size: 36px;
+  color: #283d50;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .section-header p {
+    width: 100%;
+  }
+}
+
+/* Section with background
+  --------------------------------*/
+.section-bg {
+  background: #ecf5ff;
+}
+
+#details {
+  padding: 60px 0;
+  background: #004a99;
+}
+#details .section-header h3,
+#details .section-header p {
+  color: #fff;
+}
+#details .card {
+  background: #00458f;
+  border-color: #00458f;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  #details .card {
+    margin: 0;
+  }
+}
+#details .card:hover {
+  background: #003b7a;
+  border-color: #003b7a;
+}
+#details .card i {
+  font-size: 48px;
+  padding-top: 15px;
+  color: #bfddfe;
+}
+#details .card h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+#details .card p {
+  font-size: 15px;
+  color: #d8eafe;
+}
+#details .card .readmore {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  border-bottom: #00458f solid 2px;
+}
+#details .card .readmore:hover {
+  border-bottom: #fff solid 2px;
+}
+#details .counters {
+  padding-top: 40px;
+}
+#details .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #fff;
+}
+#details .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #cce5ff;
+}
+.createJoin_room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.join_room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.join_room input {
+  width: 250px;
+  background: transparent;
+  outline: none;
+  border: none;
+  background: #00458f;
+  border-color: #00458f;
+}
+.join_room a,
+.create_room a {
+  background: #00458f;
+  border-color: #00458f;
+}
+.join_room input::placeholder {
+  color: black;
+}
+.create_room {
+  margin-left: 8%;
+}
+@media only screen and (max-width: 550px) {
+  .createJoin_room {
+    display: flex;
+    flex-direction: column;
+  }
+  .create_room {
+    margin-bottom: 8%;
+  }
+}

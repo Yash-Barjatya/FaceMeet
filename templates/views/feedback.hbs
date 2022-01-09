@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>FaceMeet-Welcome</title>
+    <link rel="stylesheet" href="css/feedback.css">
+
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1 class="display-3">
+            {{feedback_heading}}
+        </h1>
+        <hr>
+        <div class="feedback_body">
+            <p class="lead">
+            <h3> {{feedback_title}}</h3>
+            </p>
+            <p class="lead">
+                {{feedback_message}}
+            </p>
+
+        </div>
+        <hr>
+        <p>
+            Having trouble? <a href="/about">Contact us</a>
+        </p>
+        <p class="lead">
+            <a class="btn btn-outline-primary btn-sm" href="/" role="button">Continue to
+                homepage</a>
+        </p>
+    </div>
+    {{>footer}}
+    {{>back_to_top}}
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</html>

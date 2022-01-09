@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>Login page</title>
+    <link rel="stylesheet" href="css/sign_in.css">
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="signin">
+
+        <div class="signin-classic">
+
+            <form action="/signin" method="POST">
+
+                <div class="segment">
+                    <h1>Sign In</h1>
+                </div>
+
+                <label>
+                    <input type="email" placeholder="Email Address" id="email" value="" name="email" required>
+                </label>
+                <label>
+                    <input type="password" placeholder="Password" id="password" value="" name="password" required>
+                </label>
+
+                <button class="red" type="submit">
+                    <i class="fa fa-key"></i> Login</button>
+            </form>
+        </div>
+        <div class="signin-connect">
+            <h1>New here?</h1>
+            <p>Sign up and discover and meet new faces!</p>
+            <button class="red" type="submit" id="signup_btn">
+                <i class="fa fa-lock"></i> Sign up</button>
+        </div>
+        <div id="navigate">
+            <a class="btn btn-outline-primary btn-sm" href="/" role="button">Continue to
+                homepage</a>
+        </div>
+    </div>
+    {{>footer}}
+
+</body>
+<script>
+    const signup_btn = document.getElementById('signup_btn')
+    signup_btn.onclick = function () {
+        location.href = "/signup"
+    }
+</script>
+
+</html>

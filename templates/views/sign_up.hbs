@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="css/sign_up.css">
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="signup">
+        <div class="signup-connect">
+            <h1>One of us?</h1>
+            <p>If you already have an account, then just sign in.</p>
+            <p> We've missed you!!!</p>
+            <button class="red" type="button" id="signin_btn">
+                <i class="fa fa-key"></i><a href="/signin"> Sign in</a></button>
+        </div>
+        <div class="signup-classic">
+
+            <form action="/signup" method="POST">
+
+                <div class="segment">
+                    <h1>Sign up</h1>
+                </div>
+                <label>
+                    <input type="text" placeholder=" Name*" id="name" value="" name="Name" required>
+
+                </label>
+                <label>
+                    <input type="email" placeholder="Email Address*" id="email" value="" name="email" required>
+                </label>
+                <label>
+                    <input type="password" placeholder="Password*" id="password" value="" name="password" required>
+                </label>
+                <label>
+                    <input type="password" placeholder="Confirm Password*" id="confirm_password" value=""
+                        name="confirm_password" required>
+                </label>
+                <button class="red" type="submit">
+                    <i class="fa fa-lock"></i> Register</button>
+            </form>
+            <div id="navigate">
+                <a class="btn btn-outline-primary btn-sm" href="/" role="button">Continue to
+                    homepage</a>
+            </div>
+        </div>
+
+    </div>
+    {{>footer}}
+
+</body>
+
+<script>
+    const signin_btn = document.getElementById('signin_btn')
+    signin_btn.onclick = function () {
+        location.href = "/signin"
+    }
+</script>
+
+</html>

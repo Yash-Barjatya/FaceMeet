@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>FaceMeet-Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class=" container-fluid">
+                <img src="image/video-call.png" alt="logo" style="height: 20px;width:20px ">
+                <a style="color:#0d6efd" class=" navbar-brand" href="#"> <strong>FaceMeet</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br></br>
+    <!-- ======= details Section ======= -->
+    <section id="details">
+        <div class="container" data-aos="fade-up">
+            <header class="section-header">
+                <h3>Video Chat with your loved ones now</h3>
+                <p>You are only three steps away</p>
+            </header>
+
+            <div class="row row-eq-height justify-content-center">
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="bi bi-camera-reels"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Meet </h5>
+                            <p class="card-text">Create or join a meet</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+
+                        <i class="fas fa-microphone"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Microphone</h5>
+                            <p class="card-text">Connect your Microphone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fas fa-camera"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Camera</h5>
+                            <p class="card-text">Switch on your camera
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="createJoin_room">
+                <div class="create_room">
+
+                    <a onclick="location.href=('/meet')" class="btn btn-outline-dark"><b>Create Meeting</b></a>
+                </div>
+                <div class="join_room">
+
+                    <input id="meet_input" class="form-control me-2" type="search" placeholder="Paste the meet id here"
+                        aria-label="Search">
+                    <a onclick="join_meeting()" class="btn btn-outline-dark" type="submit"><b>Join
+                            meeting</b></a>
+                </div>
+            </div>
+        </div>
+    </section><!-- End details Section -->
+</body>
+<script src="js/home.js"></script>
+{{>footer}}
+{{>back_to_top}}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</html>

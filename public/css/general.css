@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    background: #fff;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  a:hover, a:active, a:focus {
+    color: #0b6bd3;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+  

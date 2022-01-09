@@ -1,0 +1,131 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+#video-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+video {
+  height: 300px;
+  width: 400px;
+  padding: 8px;
+  object-fit: cover; /*will zoom the video untill it fills the entire square and then cut the rest */
+}
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/**left hand side window*/
+.left {
+  flex: 0.8;
+  /* below lines so that control is at bottom of left container*/
+  display: flex;
+  flex-direction: column;
+}
+.container_video {
+  flex-grow: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls {
+  display: flex;
+  background-color: rgb(62, 62, 63);
+
+  color: black;
+
+  justify-content: space-between;
+}
+.controls_column {
+  display: flex;
+}
+.controls_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  min-width: 80px;
+}
+.controls_button i {
+  font-size: 25px;
+}
+#microphone_button i,
+.leave_meeting i {
+  color: rgb(168, 25, 25);
+}
+.controls_button:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
+.middle i {
+  color: green;
+}
+/**Right hand side window*/
+
+.right {
+  display: flex;
+  flex: 0.2;
+  flex-direction: column;
+
+  background-color: rgb(75, 75, 75);
+}
+.chat_header {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+.container_chat {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.container_messages {
+  display: flex;
+  padding: 20px 10px;
+}
+#message_input {
+  flex-grow: 1;
+  background-color: transparent;
+  border-top: 2px solid black;
+  color: white;
+  outline: none;
+  width: 100%;
+  padding: 18px 20px;
+}
+.container_messages {
+  color: white;
+  list-style: none;
+  display: block;
+}
+
+.popover {
+  background-color: green;
+  color: black;
+}
+#launch_modal {
+  display: none;
+}
+@media only screen and (max-width: 1217px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  video {
+    height: 150px;
+    width: 200px;
+    padding: 8px;
+    object-fit: cover; /*will zoom the video untill it fills the entire square and then cut the rest */
+  }
+}

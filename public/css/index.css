@@ -1,0 +1,172 @@
+/*--------------------------------------------------------------
+# intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  position: relative;
+  background: url("../image/intro-bg.png") center bottom no-repeat;
+  background-size: cover;
+  padding: 200px 0 120px 0;
+}
+@media (max-width: 991px) {
+  #intro {
+    padding: 140px 0 60px 0;
+  }
+}
+@media (max-width: 574px) {
+  #intro {
+    padding: 100px 0 20px 0;
+  }
+}
+#intro .intro-img {
+  width: 50%;
+  float: right;
+}
+@media (max-width: 991px) {
+  #intro .intro-img {
+    width: 80%;
+    float: none;
+    margin: 0 auto 25px auto;
+  }
+}
+#intro .intro-info {
+  width: 50%;
+  float: left;
+}
+@media (max-width: 991px) {
+  #intro .intro-info {
+    width: 80%;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  #intro .intro-info {
+    width: 100%;
+  }
+}
+#intro .intro-info h2 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+#intro .intro-info h2 span {
+  color: #74b5fc;
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  #intro .intro-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+#intro .intro-info .btn-get-started,
+#intro .intro-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+}
+#intro .intro-info .btn-get-started {
+  background: #007bff;
+  border: 2px solid #007bff;
+  color: #fff;
+}
+#intro .intro-info .btn-get-started:hover {
+  background: none;
+  border-color: #fff;
+  color: #fff;
+}
+#intro .intro-info .btn-services {
+  border: 2px solid #fff;
+}
+#intro .intro-info .btn-services:hover {
+  background: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+/* Sections Header
+--------------------------------*/
+.section-header h3 {
+  font-size: 36px;
+  color: #283d50;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .section-header p {
+    width: 100%;
+  }
+}
+
+/* Section with background
+  --------------------------------*/
+.section-bg {
+  background: #ecf5ff;
+}
+
+/* Services Section
+--------------------------------*/
+#services {
+  padding: 60px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  background: black url("../image/security_icon.svg") no-repeat fixed center;
+}
+#services .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+#services .box:hover {
+  transform: translateY(-5px);
+}
+#services .icon {
+  position: absolute;
+  left: -15px;
+  top: calc(50% - 32px);
+}
+#services .icon i {
+  font-size: 64px;
+  line-height: 0;
+  transition: 0.5s;
+}
+#services .title {
+  margin-left: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+#services .title a {
+  color: #111;
+}
+#services .box:hover .title a {
+  color: #007bff;
+}
+#services .description {
+  font-size: 14px;
+  margin-left: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
