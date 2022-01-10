@@ -19,4 +19,4 @@ It is a video chatting platform that allows you to connect with your family and 
 ## HOW TO START
 * To install the node modules: Run `npm install`
 * To run the code : `npm run dev`
- and you are good to go :)
+<br>And you are good to go :)
