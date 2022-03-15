@@ -11,7 +11,7 @@ const ul = document.querySelector("ul")
 const myPeer = new Peer(undefined, {
     path: '/peerjs',
     host: '/',
-    port: '3000' /* while deployment change it to 443*/
+    port: '443' /* while deployment change it to 443*/
 })
 var myVideoStream;
 var screenStream;
